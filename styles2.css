@@ -1,0 +1,290 @@
+.site-footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #f4f4f4;       
+    padding: 25px 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto; 
+}
+.site-footer p {
+    margin: 8px 0; 
+}
+.site-footer a {
+    color: #50aeff;         
+    text-decoration: none; 
+    font-weight: bold;
+    font-size: 1rem;
+}
+.site-footer a:hover {
+    text-decoration: underline; 
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #111;
+    color: white;
+    --bg-imagen-before: url('Rallyfnd3.jpg');
+    --bg-imagen-after: url('Rallyfnd4.jpg');
+}
+body::before,
+body::after {
+    content: '';
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100vh;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 1.5s ease-in-out;
+}
+body::before {
+    background-image: var(--bg-imagen-before);
+}
+body::after {
+    background-image: var(--bg-imagen-after);
+}
+body.bg-active-before::before { opacity: 0.2; } 
+body.bg-active-before::after  { opacity: 0; }
+body.bg-active-after::before { opacity: 0; }
+body.bg-active-after::after  { opacity: 0.2; }
+.trigger-fondo {
+    height: 1px;
+    width: 100%;
+}
+.menu-navegacion {
+    display: flex; 
+    justify-content: center;
+    gap: 20px;
+    padding: 30px; 
+    background-color: #181818;
+    position: relative;
+    z-index: 1;
+}
+.opcion-neon {
+    position: relative;
+    border-radius: 80px;
+    padding: 3px; 
+    overflow: hidden;
+    z-index: 1;
+}
+
+.opcion-neon::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    z-index: -1;
+    
+    background: conic-gradient(
+        transparent,
+         rgba(217, 186, 6, 0.7),
+        rgba(237, 237, 237, 0.7), 
+        transparent
+    );
+    animation: rotar 4s linear infinite;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.opcion-neon a {
+    display: block;
+    background-color: #2c2c2c;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 80px; 
+    transition: color 0.3s ease;
+}
+.opcion-neon:hover::before {
+    opacity: 1; 
+}
+.opcion-neon:hover a {
+    color: rgb(180, 154, 8);  
+}
+
+@keyframes rotar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.Contenido1{
+    text-align: center;
+}
+.Contenido2{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    max-width: 1000px; 
+    padding: 20px;
+    justify-items: center;
+    margin: 0 auto;
+}
+.Imagenruta {
+   position: relative; 
+    padding: 3px;
+    border-radius: 12px; 
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.textoR{
+    color: white;
+    align-items: center;
+}
+.Imagenruta::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    z-index: -1; /* Lo pone detrás de la imagen */
+    
+    background: conic-gradient(
+        transparent,
+        blue,
+        #d400d4,
+        transparent 30%
+    );
+    
+    animation: rotar 4s linear infinite;
+}
+@keyframes rotar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.Imagenruta img {
+    display: block; 
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.textoR h1 {
+    margin-top: 0; 
+}
+.Contenido3{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    max-width: 1000px; 
+    padding: 20px;
+    justify-items: center;
+    margin: 0 auto;
+    flex-direction: row-reverse;
+}
+.Imagencastro {
+   position: relative; 
+    padding: 3px;
+    border-radius: 12px; 
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.textoR2{
+    color: white;
+    align-items: center;
+}
+.Imagencastro::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    z-index: -1;
+    
+    background: conic-gradient(
+        transparent,
+        blue,
+        #d400d4,
+        transparent 30%
+    );
+    
+    animation: rotar 4s linear infinite;
+}
+@keyframes rotar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.Imagencastro img {
+    display: block; 
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.textoR h1 {
+    margin-top: 0; 
+}
+.Contenido4{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    max-width: 1000px; 
+    padding: 20px;
+    justify-items: center;
+    margin: 0 auto;
+}
+.Imagenpalomino {
+   position: relative; 
+    padding: 3px;
+    border-radius: 12px; 
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.textoR3{
+    color: white;
+    align-items: center;
+}
+.Imagenpalomino::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    z-index: -1;
+    
+    background: conic-gradient(
+        transparent,
+        blue,
+        #d400d4,
+        transparent 30%
+    );
+    
+    animation: rotar 4s linear infinite;
+}
+@keyframes rotar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.Imagenpalomino img {
+    display: block; 
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.textoR3 h1 {
+    margin-top: 0; 
+}

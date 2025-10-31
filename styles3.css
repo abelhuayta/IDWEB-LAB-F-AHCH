@@ -1,0 +1,157 @@
+body {
+ margin: 0;
+ padding: 0;
+ font-family: sans-serif;
+ background-color: #111; 
+ color: white;
+
+ background-image: url('Rallyfnd5.jpeg');
+ background-size: cover;      
+ background-position: center;  
+ background-attachment: fixed; 
+}
+.menu-navegacion {
+    display: flex; 
+    justify-content: center;
+    gap: 20px;
+    padding: 30px; 
+    background-color: #181818;
+}
+.opcion-neon {
+    position: relative;
+    border-radius: 80px;
+    padding: 3px; 
+    overflow: hidden;
+    z-index: 1;
+}
+
+.opcion-neon::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    z-index: -1;
+    
+    background: conic-gradient(
+        transparent,
+        rgba(217, 186, 6, 0.7),
+        rgba(237, 237, 237, 0.7), 
+        transparent
+    );
+    animation: rotar 4s linear infinite;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.opcion-neon a {
+    display: block;
+    background-color: #2c2c2c;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 80px; 
+    transition: color 0.3s ease;
+}
+.opcion-neon:hover::before {
+    opacity: 1; 
+}
+.opcion-neon:hover a {
+    color: rgb(180, 154, 8); 
+}
+
+@keyframes rotar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.site-footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #f4f4f4;       
+    padding: 25px 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto; 
+}
+.site-footer p {
+    margin: 8px 0; 
+}
+.site-footer a {
+    color: #50aeff;         
+    text-decoration: none; 
+    font-weight: bold;
+    font-size: 1rem;
+}
+.site-footer a:hover {
+    text-decoration: underline; 
+}
+.ContenidoResultados {
+    max-width: 1000px; 
+    margin: 20px auto; 
+    padding: 20px;
+    font-size: 1.1rem;
+    line-height: 1.6;   
+    
+    background-color: rgba(20, 20, 20, 0.6); 
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.ContenidoResultados p {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    color: #ccc; 
+}
+.Contenido1{
+    text-align: center;
+    color: #111;
+}
+.tabla-resultados {
+    width: 100%; 
+    border-collapse: collapse; 
+    margin: 20px 0;
+    font-size: 1rem;
+    
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    overflow: hidden; 
+}
+
+.tabla-resultados th {
+    background-color: rgba(217, 186, 6, 0.7); 
+    color: #111; 
+    padding: 14px 18px;
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.tabla-resultados td {
+    padding: 14px 18px;
+    border-bottom: 1px solid #444; 
+    color: #f0f0f0; 
+}
+
+.tabla-resultados tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.1); 
+}
+
+.tabla-resultados td:first-child {
+    font-weight: bold;
+    color: #e5c100; 
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.tabla-resultados tbody tr:last-child td {
+    border-bottom: none; 
+}
