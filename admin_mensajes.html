@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de mensajes - CDI 2025</title>
+    <link rel="stylesheet" href="styles6.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a class="logo" href="index.html">CDI 2025</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Pilotos.html">Pilotos</a></li>
+                <li><a href="Resultados.html">Resultados</a></li>
+                <li><a href="Videos.html">Videos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="sub-hero contacto-hero">
+        <div class="hero-overlay"></div>
+        <div class="sub-hero-content">
+            <h1>Panel de mensajes</h1>
+            <p>Página protegida. Ingresa la contraseña para ver los mensajes enviados desde el formulario de contacto.</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-section">
+            <div class="contact-card">
+                <h2>Acceso administrador</h2>
+
+                <form class="contact-form" action="http://localhost:8000/admin" method="POST">
+                    <div class="form-group">
+                        <label for="pass">Contraseña</label>
+                        <input id="pass" name="password" type="password" required>
+                    </div>
+
+                    <button type="submit" class="btn-enviar">Ingresar</button>
+                </form>
+
+                <p class="admin-note">
+                    *El backend en Python verifica la contraseña y, si es correcta, muestra una tabla con los mensajes
+                    guardados en MySQL.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p><strong>Contacto para Contratos</strong></p>
+            <p>Puedes escribirme a:</p>
+            <p>
+                <a href="mailto:ahuaytach@unsa.edu.pe">ahuaytach@unsa.edu.pe</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 else {
                     document.body.style.setProperty('--bg-imagen-before', `url('${nuevaImagen}')`);
                     document.body.className = 'bg-active-before';
+
                     activePseudo = 'before';
                 }
             }
@@ -32,5 +33,4 @@ document.addEventListener('DOMContentLoaded', () => {
     triggers.forEach(trigger => {
         observador.observe(trigger);
     });
-
 });

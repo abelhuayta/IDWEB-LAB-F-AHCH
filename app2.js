@@ -1,34 +1,27 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener("DOMContentLoaded", () => {
 
-    const contenedorFondo = document.querySelector('.fondo');
+    const fondo = document.querySelector(".fondo");
+    const trigger = document.querySelector("#trigger-fundido");
 
-    const trigger = document.querySelector('#trigger-fundido');
-
-    if (!contenedorFondo || !trigger) {
-        console.error("No se encontraron los elementos necesarios para el fundido.");
+    if (!fondo || !trigger) {
+        console.warn("Fondo o trigger no encontrado.");
         return;
     }
 
     const opciones = {
-        root: null, 
-        threshold: 0.5 
+        root: null,
+        threshold: 0.25   
     };
 
-    const observador = new IntersectionObserver(function(entries, observer) {
-        
-        entries.forEach(entry => {
+    const observador = new IntersectionObserver((entradas) => {
+        entradas.forEach(entry => {
             if (entry.isIntersecting) {
-                
-                contenedorFondo.classList.add('visible');
-                
+                fondo.classList.add("visible");
             } else {
-                
-                contenedorFondo.classList.remove('visible');
+                fondo.classList.remove("visible");
             }
         });
-
     }, opciones);
 
     observador.observe(trigger);
-
 });

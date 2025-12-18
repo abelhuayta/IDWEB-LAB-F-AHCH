@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - CDI 2025</title>
+    <link rel="stylesheet" href="styles5.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a class="logo" href="index.html">CDI 2025</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Pilotos.html">Pilotos</a></li>
+                <li><a href="Resultados.html">Resultados</a></li>
+                <li><a href="Videos.html">Videos</a></li>
+                <li><a class="active" href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="sub-hero contacto-hero">
+        <div class="hero-overlay"></div>
+        <div class="sub-hero-content">
+            <h1>Contacto</h1>
+            <p>¿Quieres más información o colaborar con la cobertura del Caminos del Inca 2025? Envíame un mensaje.</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-section">
+            <div class="contact-card">
+                <h2>Formulario de contacto</h2>
+                <p class="contact-desc">
+                    Para contratos o dudas enviar mensajes mediante este formulario.
+                </p>
+
+                <form class="contact-form" action="http://localhost:8000/enviar" method="POST">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input id="nombre" name="nombre" type="text" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="correo">Correo electrónico</label>
+                        <input id="correo" name="correo" type="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-enviar">Enviar mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p><strong>Contacto para Contratos</strong></p>
+            <p>Puedes escribirme a:</p>
+            <p>
+                <a href="mailto:ahuaytach@unsa.edu.pe">ahuaytach@unsa.edu.pe</a>
+            </p>
+        </div>
+        <p>
+    <a href="admin_mensajes.html" style="
+        color: #888; 
+        font-size: 0.8rem; 
+        text-decoration: none;
+        ">Panel Admin</a>
+    </p>
+
+    </footer>
+
+</body>
+</html>

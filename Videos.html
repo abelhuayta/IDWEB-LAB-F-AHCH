@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,79 +7,103 @@
     <link rel="stylesheet" href="styles4.css">
 </head>
 <body>
-    <nav class="menu-navegacion">
-        <div class="opcion-neon">
-            <a href="index.html">Inicio</a>
-        </div>
 
-        <div class="opcion-neon">
-            <a href="Pilotos.html">Pilotos
-            </a>
-        </div>
-
-        <div class="opcion-neon">
-            <a href="Resultados.html">Resultados</a>
-        </div>
-
-        <div class="opcion-neon">
-            <a href="#">Videos</a>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a class="logo" href="index.html">CDI 2025</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Pilotos.html">Pilotos</a></li>
+                <li><a href="Resultados.html">Resultados</a></li>
+                <li><a class="active" href="Videos.html">Videos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
         </div>
     </nav>
-    <div class="ContenidoP">
-        
-        <div class="Contenido1">
+
+    <header class="sub-hero videos-hero">
+        <div class="hero-overlay"></div>
+        <div class="sub-hero-content">
             <h1>Galería de Videos</h1>
-            <h2>Siente la adrenalina del rally</h2>
+            <p>Siente la adrenalina del rally en cada etapa del Caminos del Inca 2025.</p>
         </div>
+    </header>
 
-        <div class="ContenidoVideos">
+    <main>
+        <section class="page-section">
 
-            <h3>Video Destacado: Resumen Etapa 5</h3>
-            
-            <div class="video-responsive-wrapper">
-                <iframe src="https://www.youtube.com/watch?v=3APhj_-soq0" 
-                        title="YouTube video player" frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            <div class="ContenidoVideos">
+                <h3 class="section-title">Video Destacado · Resumen Etapa 5</h3>
+
+                <div class="video-responsive-wrapper destacado">
+                    <iframe 
+                        src="https://www.youtube.com/embed/3APhj_-soq0"
+                        title="Resumen Etapa 5 CDI 2025"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen>
-                </iframe>
+                    </iframe>
+                </div>
+
+                <hr class="video-separator">
+
+                <h3 class="section-title">Más Videos de la Competencia</h3>
+
+                <div class="video-grid">
+                    <div class="video-responsive-wrapper">
+                        <iframe 
+                            src="https://www.youtube.com/embed/MjBJ9kgCI-Q"
+                            title="Video 2"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+
+                    <div class="video-responsive-wrapper">
+                        <iframe 
+                            src="https://www.youtube.com/embed/PLZ2GqMzPwk"
+                            title="Video 3"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+
+                    <div class="video-responsive-wrapper">
+                        <iframe 
+                            src="https://www.youtube.com/embed/E6ipzN4dKiQ"
+                            title="Video 4"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+
+                    <div class="video-responsive-wrapper">
+                        <iframe 
+                            src="https://www.youtube.com/embed/6PIxa4kL3Dw"
+                            title="Video 5"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
             </div>
 
-            <hr class="video-separator"> <h3>Más Videos de la Competencia</h3>
+        </section>
+    </main>
 
-            <div class="video-grid">
-                
-                <div class="video-responsive-wrapper">
-                    <iframe src="https://www.youtube.com/watch?v=MjBJ9kgCI-Q" 
-                            title="Video 2" frameborder="0" allowfullscreen>
-                    </iframe>
-                </div>
-                
-                <div class="video-responsive-wrapper">
-                    <iframe src="https://www.youtube.com/watch?v=PLZ2GqMzPwk" 
-                            title="Video 3" frameborder="0" allowfullscreen>
-                    </iframe>
-                </div>
-
-                <div class="video-responsive-wrapper">
-                    <iframe src="https://www.youtube.com/watch?v=E6ipzN4dKiQ" 
-                            title="Video 4" frameborder="0" allowfullscreen>
-                    </iframe>
-                </div>
-
-                <div class="video-responsive-wrapper">
-                    <iframe src="https://www.youtube.com/watch?v=6PIxa4kL3Dw" 
-                            title="Video 5" frameborder="0" allowfullscreen>
-                    </iframe>
-                </div>
-    </div>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p><strong>Contacto para Contratos</strong></p>
+            <p>Puedes escribirme a:</p>
+            <p>
+                <a href="mailto:ahuaytach@unsa.edu.pe">ahuaytach@unsa.edu.pe</a>
+            </p>
         </div>
-     <footer class="site-footer">
-    <div class="footer-content">
-        <p><strong>Contacto para Contratos</strong></p>
-        <p>Puedes escribirme a:</p>
-        <p>
-            <a href="ahuaytach@unsa.edu.pe">ahuaytach@unsa.edu.pe</a>
-        </p>
-    </div>    
+    </footer>
+
 </body>
 </html>
